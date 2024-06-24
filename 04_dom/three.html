@@ -9,10 +9,33 @@
     
 </body>
 <script>
+    //first method
+
+    const myNew=document.createElement('div')
+    console.log(myNew)
+    myNew.className="mine"
+    myNew.id=Math.random()
+    myNew.style.backgroundColor="green"
+    myNew.style.padding="50px"
+    myNew.style.fontSize="50px"
+      const addText=document.createTextNode("new channel")
+      myNew.appendChild(addText)
+      document.body.appendChild(myNew)
+
+    
+
+
+
+     //second method
     const newName=document.createElement('div')
    console.log(newName);
-  // newName.className="new";
-  // div.id=Math.random()
+   newName.className="new"
+   newName.id=Math.random()
+   newName.setAttribute("title","parva jain")
+   newName.style.backgroundColor = "red"
+    newName.style.padding = "20px"
+  newName.innerText="chai or code"
+  document.body.appendChild(newName)
 
 
 </script>
